@@ -1,0 +1,47 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+/** --Igrica-- **/
+#igrica{
+	width: 500px;
+	height: 200px;
+	border: 1px solid black;
+}
+
+/** --Lik-- **/
+#lik {
+	width: 20px;
+	height: 50px;
+	background-color: blue;
+	position: relative;
+	top: 150px;
+}
+.animate {
+	animation: skok 500ms;
+}
+
+@keyframes skok{
+	0%{top: 150px;}
+	30%{top: 120px;}
+	70%{top: 120px;}
+	100%{top: 150px;}
+}
+
+/** --blok-- **/
+#blok {
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	position: relative;
+	top: 130px;
+	left: 480px;
+	animation: blok 1s infinite linear;
+}
+
+@keyframes blok{
+	0%{left:480px;}
+	100%{left:-40px;}
+}

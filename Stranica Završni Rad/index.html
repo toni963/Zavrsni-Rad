@@ -1,0 +1,826 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Stranica</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--Font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+
+    <!--JavaScript Bundle-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+    <!---- NavigationBar ---->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="slike/gablerica.png" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#food">Food</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!---- Slider ---->
+    <div id="slider">
+        <div id="headerSlider" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#headerSlider" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#headerSlider" data-bs-slide-to="1"></li>
+                <li data-bs-target="#headerSlider" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="slike/Banner1.jpg" class="d-block img-fluid" />
+                    <div class="carousel-caption">
+                        <h5>Restoraunt Gablerica</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="slike/Banner2.jpg" class="d-block img-fluid" />
+                    <div class="carousel-caption">
+                        <h5>An ideal space for special celebrations</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="slike/Banner3.jpg" class="d-block img-fluid" />
+                    <div class="carousel-caption">
+                        <h5>We are expecting your arrival</h5>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#headerSlider" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#headerSlider" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!---- About ---->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>About Us</h2>
+                    <div class="about-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit, ligula vitae lacinia accumsan, dolor nisl tempor justo, at gravida massa lacus lobortis nunc. Cras varius ullamcorper quam vitae posuere. Integer in libero vel sapien porta bibendum. Aliquam erat volutpat. Sed posuere, mauris eget euismod feugiat, massa enim porta orci, sed auctor felis mauris eu mi. Maecenas sodales, lorem sit amet euismod mollis, leo nulla congue libero, viverra volutpat felis purus non risus. Nunc ultrices libero aliquam, convallis ante eget, posuere nisl. Aenean varius dignissim metus, vitae lobortis turpis luctus at. Nulla facilisi.
+                    </div>
+                    <a href="about.html"><button type="button" class="btn btn-primary">Read more --></button></a>
+                </div>
+                <div class="col-md-6 skills-bar">
+                    <h3>Ratings:</h3>
+                    <p>Overall</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%">8/10</div>
+                    </div>
+                    <p>Food</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%">9/10</div>
+                    </div>
+                    <p>Personnel</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%">8/10</div>
+                    </div>
+                    <p>Atmosphere</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 70%">7/10</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---- Food ---->
+    <section id="food">
+        <div class="container">
+            <h1>Our Food</h1>
+            <div class="row food">
+                <div class="col-md-3 text-center">
+                    <a href="#hamburger">
+                        <div class="icon">
+                            <i class="fas fa-hamburger"></i>
+                        </div>
+                        <h3>Hamburgers</h3>
+                        <p>We have large variety of hamburgers for your to choose from!</p>
+                    </a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <a href="#pizza">
+                        <div class="icon">
+                            <i class="fas fa-pizza-slice"></i>
+                        </div>
+                        <h3>Pizza's</h3>
+                        <p>We have every pizza you can think of.</p>
+                    </a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <a href="#sea">
+                        <div class="icon">
+                            <i class="fas fa-fish"></i>
+                        </div>
+                        <h3>Sea Food</h3>
+                        <p>We have large variety of sea food.</p>
+                    </a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <a href="#plate">
+                        <div class="icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Plate Food</h3>
+                        <p>Soups, fruits, vegetables, grains, meat.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br /> <br /> <br /><br /> <br />
+
+    <!---- Hamburgers ---->
+    <section id="hamburger">
+        <div class="container">
+            <h1>Hamburgers</h1>
+
+            <!---- Red 1 ---->
+            <div class="row">
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/04/Screenshot-2019-02-14-at-16.05.54.png" target="_blank">
+                            <img src="slike/hamb/hamb1.png" class="img-responsive" />
+                            <h2>Got Beef</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/04/Screen-Shot-2019-03-29-at-16.00.12-1.png" target="_blank">
+                            <img src="slike/hamb/hamb2.png" class="img-responsive" />
+                            <h2>Heff’s Burger</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/04/Screenshot-2019-04-28-at-18.00.36.png" target="_blank">
+                            <img src="slike/hamb/hamb3.png" class="img-responsive" />
+                            <h2>L’Artisan du Burger</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/04/Screenshot-2019-02-19-at-21.28.15.png" target="_blank">
+                            <img src="slike/hamb/hamb4.png" class="img-responsive" />
+                            <h2>Franky’s Burger</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!---- Red 2 ---->
+            <div class="row">
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/04/harrys-burger-1024x683.jpg" target="_blank">
+                            <img src="slike/hamb/hamb1.1.jpg" class="img-responsive" />
+                            <h2>Harry’s Bar & Burger</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/04/RocoMamas-Stoneridge-Centre-Johannesburg.jpg" target="_blank">
+                            <img src="slike/hamb/hamb1.2.jpg" class="img-responsive" />
+                            <h2>RocoMamas</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/04/Screenshot-2019-02-27-at-08.04.50.png" target="_blank">
+                            <img src="slike/hamb/hamb1.3.png" class="img-responsive" />
+                            <h2>Star Burger Хрещатик</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/04/Screenshot-2019-02-11-at-08.06.01.png" target="_blank">
+                            <img src="slike/hamb/hamb1.4.png" class="img-responsive" />
+                            <h2>Burger Gourmet</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!---- Red 3 ---->
+            <div class="row">
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/04/Screenshot-2019-02-19-at-16.50.03.png/" target="_blank">
+                            <img src="slike/hamb/hamb2.1.png" class="img-responsive" />
+                            <h2>Submarine Burger</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/04/Screenshot-2019-03-04-at-15.49.55.png" target="_blank">
+                            <img src="slike/hamb/hamb2.2.png" class="img-responsive" />
+                            <h2>Capital Burger</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/04/Screenshot-2019-04-09-at-11.43.21-1.png" target="_blank">
+                            <img src="slike/hamb/hamb2.3.png" class="img-responsive" />
+                            <h2>Burgerlich</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/04/Screenshot-2019-03-04-at-17.50.01.png" target="_blank">
+                            <img src="slike/hamb/hamb2.4.png" class="img-responsive" />
+                            <h2>Corner Burger Mt Eden</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!---- Red 4 ---->
+            <div class="row">
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/04/Screenshot-2019-02-19-at-22.05.44.png" target="_blank">
+                            <img src="slike/hamb/hamb3.1.png" class="img-responsive" />
+                            <h2>Taste Burger</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/04/Screenshot-2019-02-19-at-17.24.05.png" target="_blank">
+                            <img src="slike/hamb/hamb3.2.png" class="img-responsive" />
+                            <h2>Ohana Lei’Pomo</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/04/Screenshot-2019-02-19-at-21.50.31.png" target="_blank">
+                            <img src="slike/hamb/hamb3.3.png" class="img-responsive" />
+                            <h2>Shoreditch Burger</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/04/Screenshot-2019-02-19-at-22.24.47.png" target="_blank">
+                            <img src="slike/hamb/hamb3.4.png" class="img-responsive" />
+                            <h2>Projekt Burge</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br /> <br /> <br /><br /> <br />
+
+
+    <!---- Pizzas ---->
+    <section id="pizza">
+        <div class="container">
+            <h1>Pizza's</h1>
+
+            <!---- Red 1 ---->
+            <div class="row">
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/05/Screenshot-2019-04-02-at-13.47.02.png" target="_blank">
+                            <img src="slike/pizza/pizza1.png" class="img-responsive" />
+                            <h2>Lilla Napoli Pizza</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/05/Screenshot-2019-02-08-at-18.07.50-1.png" target="_blank">
+                            <img src="slike/pizza/pizza2.png" class="img-responsive" />
+                            <h2>Figidini Pizza</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/05/mother.jpg" target="_blank">
+                            <img src="slike/pizza/pizza3.jpg" class="img-responsive" />
+                            <h2>Mother Pizza</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/05/Screenshot-2019-05-05-at-19.38.07.png" target="_blank">
+                            <img src="slike/pizza/pizza4.png" class="img-responsive" />
+                            <h2>Motorino Pizza</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!---- Red 2 ---->
+            <div class="row">
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/05/Screenshot-2019-04-02-at-12.40.12.png" target="_blank">
+                            <img src="slike/pizza/pizza1.1.png" class="img-responsive" />
+                            <h2>Paesano Pizza</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/05/Screenshot-2019-04-03-at-13.20.45.png" target="_blank">
+                            <img src="slike/pizza/pizza1.2.png" class="img-responsive" />
+                            <h2>Burrata Pizza</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/05/Screenshot-2019-04-30-at-15.51.17.png" target="_blank">
+                            <img src="slike/pizza/pizza1.3.png" class="img-responsive" />
+                            <h2>Proof Pizza</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/05/Screenshot-2019-03-14-at-08.27.28.png" target="_blank">
+                            <img src="slike/pizza/pizza1.4.png" class="img-responsive" />
+                            <h2>Pizzium Pizza</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!---- Red 3 ---->
+            <div class="row">
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/05/Screenshot-2019-04-02-at-13.36.49.png" target="_blank">
+                            <img src="slike/pizza/pizza2.1.png" class="img-responsive" />
+                            <h2>Montana Pizza</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/07/Screenshot-2019-07-14-at-16.47.29-1024x769.png" target="_blank">
+                            <img src="slike/pizza/pizza2.2.png" class="img-responsive" />
+                            <h2>Imilla Alzada Pizza</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/05/Screenshot-2019-04-02-at-13.43.16.png" target="_blank">
+                            <img src="slike/pizza/pizza2.3.png" class="img-responsive" />
+                            <h2>Gazzo Pizza</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/05/Slovakia.png" target="_blank">
+                            <img src="slike/pizza/pizza2.4.png" class="img-responsive" />
+                            <h2>Basilicó Pizza</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!---- Red 4 ---->
+            <div class="row">
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/05/Screenshot-2019-05-05-at-19.42.56.png" target="_blank">
+                            <img src="slike/pizza/pizza3.1.png" class="img-responsive" />
+                            <h2>Emma Pizza</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/05/Screenshot-2019-03-22-at-13.07.00.png" target="_blank">
+                            <img src="slike/pizza/pizza3.2.png" class="img-responsive" />
+                            <h2>The Good Son Pizza</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/05/Screenshot-2019-05-05-at-20.14.38.png" target="_blank">
+                            <img src="slike/pizza/pizza3.3.png" class="img-responsive" />
+                            <h2>Tamaki Pizza</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/05/nNeaa.jpg" target="_blank">
+                            <img src="slike/pizza/pizza3.4.jpg" class="img-responsive" />
+                            <h2>Gino's Pizza</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br /> <br /> <br /><br /> <br />
+
+
+    <!---- Sea Food ---->
+    <section id="sea">
+        <div class="container">
+            <h1>Sea Food</h1>
+
+            <!---- Red 1 ---->
+            <div class="row">
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://imgix.ranker.com/user_node_img/40/783296/original/crab-foods-photo-u2?fit=crop&fm=pjpg&q=60&w=650&dpr=2" target="_blank">
+                            <img src="slike/sea/sea1.jpg" class="img-responsive" />
+                            <h2>Crab</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://imgix.ranker.com/user_node_img/3836/76716383/original/shrimp-foods-photo-u3?fit=crop&fm=pjpg&q=60&w=650&dpr=2" target="_blank">
+                            <img src="slike/sea/sea2.jpg" class="img-responsive" />
+                            <h2>Shrimp</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://imgix.ranker.com/user_node_img/74/1463865/original/lobster-foods-photo-u4?fit=crop&fm=pjpg&q=60&w=650&dpr=2" target="_blank">
+                            <img src="slike/sea/sea3.jpg" class="img-responsive" />
+                            <h2>Lobster</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://imgix.ranker.com/user_node_img/100/1984376/original/scallop-foods-photo-u2?fit=crop&fm=pjpg&q=60&w=650&dpr=2" target="_blank">
+                            <img src="slike/sea/sea4.jpg" class="img-responsive" />
+                            <h2>Scallops</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!---- Red 2 ---->
+            <div class="row">
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://imgix.ranker.com/user_node_img/38/740484/original/clam-foods-photo-u2?fit=crop&fm=pjpg&q=60&w=650&dpr=2" target="_blank">
+                            <img src="slike/sea/sea1.1.jpg" class="img-responsive" />
+                            <h2>Clams</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://imgix.ranker.com/user_node_img/40/785544/original/crayfish-foods-photo-u2?fit=crop&fm=pjpg&q=60&w=650&dpr=2" target="_blank">
+                            <img src="slike/sea/sea1.2.jpg" class="img-responsive" />
+                            <h2>Crawfish / Crayfish / Crawdads</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://imgix.ranker.com/user_node_img/82/1634540/original/mussel-foods-photo-u2?fit=crop&fm=pjpg&q=60&w=650&dpr=2" target="_blank">
+                            <img src="slike/sea/sea1.3.jpg" class="img-responsive" />
+                            <h2>Mussels</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://imgix.ranker.com/user_node_img/14/266251/original/squid-u5?fit=crop&fm=pjpg&q=60&w=650&dpr=2" target="_blank">
+                            <img src="slike/sea/sea1.4.jpg" class="img-responsive" />
+                            <h2>Squid</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!---- Red 3 ---->
+            <div class="row">
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://imgix.ranker.com/user_node_img/88/1742170/original/oyster-foods-photo-u1?fit=crop&fm=pjpg&q=60&w=650&dpr=2" target="_blank">
+                            <img src="slike/sea/sea2.1.jpg" class="img-responsive" />
+                            <h2>Oysters</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://imgix.ranker.com/user_node_img/3682/73637553/original/langoustine-foods-photo-u2?fit=crop&fm=pjpg&q=60&w=650&dpr=2" target="_blank">
+                            <img src="slike/sea/sea2.2.jpg" class="img-responsive" />
+                            <h2>Langoustine</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://imgix.ranker.com/user_node_img/86/1708448/original/octopus-foods-photo-u1?fit=crop&fm=pjpg&q=60&w=650&dpr=2" target="_blank">
+                            <img src="slike/sea/sea2.3.jpg" class="img-responsive" />
+                            <h2>Octopus</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://imgix.ranker.com/user_node_img/40/797136/original/cuttlefish-foods-photo-u1?fit=crop&fm=pjpg&q=60&w=650&dpr=2" target="_blank">
+                            <img src="slike/sea/sea2.4.jpg" class="img-responsive" />
+                            <h2>Cuttlefish</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!---- Red 4 ---->
+            <div class="row">
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://imgix.ranker.com/user_node_img/20/388245/original/abalone-foods-photo-u1?fit=crop&fm=pjpg&q=60&w=650&dpr=2" target="_blank">
+                            <img src="slike/sea/sea3.1.jpg" class="img-responsive" />
+                            <h2>Abalone</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://imgix.ranker.com/user_node_img/100/1995522/original/sea-urchin-foods-photo-u1?fit=crop&fm=pjpg&q=60&w=650&dpr=2" target="_blank">
+                            <img src="slike/sea/sea3.2.jpg" class="img-responsive" />
+                            <h2>Sea Urchin</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://imgix.ranker.com/user_node_img/59/1171778/original/hoi-sam-foods-photo-u1?fit=crop&fm=pjpg&q=60&w=650&dpr=2" target="_blank">
+                            <img src="slike/sea/sea3.3.jpg" class="img-responsive" />
+                            <h2>Sea Cucumber</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://bigseventravel.com/wp-content/uploads/2019/11/goteburg-1024x682.jpg" target="_blank">
+                            <img src="slike/sea/sea3.4.jpg" class="img-responsive" />
+                            <h2>Göteborg</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br /> <br /> <br /><br /> <br />
+
+
+    <!---- Plate Food ---->
+    <section id="plate">
+        <div class="container">
+            <h1>Plate Food</h1>
+
+            <!---- Red 1 ---->
+            <div class="row">
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://cdn.tasteatlas.com/Images/Dishes/0809873b805340dcbdb18110564779ef.jpg?w=905&h=510" target="_blank">
+                            <img src="slike/plate/plate1.jpg" class="img-responsive" />
+                            <h2>Bisque</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://cdn.tasteatlas.com/images/dishes/1d294997f74843978bb2d48c0f83c6e6.jpg?w=905&h=510" target="_blank">
+                            <img src="slike/plate/plate2.jpg" class="img-responsive" />
+                            <h2>Miso Soup</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://imgix.ranker.com/user_node_img/38/740484/original/clam-foods-photo-u2?fit=crop&fm=pjpg&q=60&w=650&dpr=2" target="_blank">
+                            <img src="slike/plate/plate3.jpg" class="img-responsive" />
+                            <h2>Ramen</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://cdn.tasteatlas.com/images/dishes/fa12a95fe7ce41e89951e5d153269402.jpg?w=905&h=510" target="_blank">
+                            <img src="slike/plate/plate4.jpg" class="img-responsive" />
+                            <h2>Pho</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!---- Red 2 ---->
+            <div class="row">
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://cdn.tasteatlas.com/images/dishes/31ae8fa47c19479285df8cd192d8cf28.jpg?w=905&h=510" target="_blank">
+                            <img src="slike/plate/plate1.1.jpg" class="img-responsive" />
+                            <h2>Spaghetti alle vongole</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://cdn.tasteatlas.com/images/dishes/608fcdea69204dcdb8828dd494992f31.jpg?w=905&h=510" target="_blank">
+                            <img src="slike/plate/plate1.2.jpg" class="img-responsive" />
+                            <h2>Lasagne alla Bolognese</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://cdn.tasteatlas.com/images/dishes/990d2b4155d248ff8838ca8350be1d78.jpg?w=905&h=510" target="_blank">
+                            <img src="slike/plate/plate1.3.jpg" class="img-responsive" />
+                            <h2>Pasta carbonara</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://cdn.tasteatlas.com/images/dishes/8889349736294b0a929b69eb29d67dad.jpg?w=905&h=510" target="_blank">
+                            <img src="slike/plate/plate1.4.jpg" class="img-responsive" />
+                            <h2>Tagliatelle al ragù alla Bolognese</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!---- Red 3 ---->
+            <div class="row">
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://cdn.tasteatlas.com/images/dishes/abbef07b6054405a8b2305db7beca93e.jpg?w=905&h=510" target="_blank">
+                            <img src="slike/plate/plate2.1.jpg" class="img-responsive" />
+                            <h2>Sarma</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://cdn.tasteatlas.com/images/dishes/5cc560fb728646eb8f525c7febff201e.jpg?w=905&h=510" target="_blank">
+                            <img src="slike/plate/plate2.2.jpg" class="img-responsive" />
+                            <h2>Banchan</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://cdn.tasteatlas.com/Images/Dishes/fbefddd4e4de4f6ab8d43d6fda3dc21f.jpg?w=905&h=510" target="_blank">
+                            <img src="slike/plate/plate2.3.jpg" class="img-responsive" />
+                            <h2>Grilled Cheese</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://cdn.tasteatlas.com/Images/Dishes/cd8d563ba33a4486abaa5b2d615f9b5d.jpg?w=905&h=510" target="_blank">
+                            <img src="slike/plate/plate2.4.jpg" class="img-responsive" />
+                            <h2>Guacamole</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!---- Red 4 ---->
+            <div class="row">
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://cdn.tasteatlas.com/images/dishes/eee2ad665ef54610b8aeb5a43ce74677.jpg?w=905&h=510" target="_blank">
+                            <img src="slike/plate/plate3.1.jpg" class="img-responsive" />
+                            <h2>Bulgogi</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://cdn.tasteatlas.com/images/dishes/bad3bf5847bc4dee9ad59f1d9ca84725.jpg?w=905&h=510" target="_blank">
+                            <img src="slike/plate/plate3.2.jpg" class="img-responsive" />
+                            <h2>Tonkatsu</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://cdn.tasteatlas.com/Images/Dishes/385f61bf908247b5ac663e6dc3beb95b.jpg?w=905&h=510" target="_blank">
+                            <img src="slike/plate/plate3.3.jpg" class="img-responsive" />
+                            <h2>Ceviche</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 food-pic text-center">
+                    <div class="img-box">
+                        <a href="https://cdn.tasteatlas.com/Images/Dishes/8fd2297171484b88be3e3e6815979690.jpg?w=905&h=510" target="_blank">
+                            <img src="slike/plate/plate3.4.jpg" class="img-responsive" />
+                            <h2>Bityani</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br /> <br /> <br /> <br /> <br />
+    <!---- Contact ---->
+    <section id="contact">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <form class="conact-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" />
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" placeholder="Phone no." />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" />
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send message</button>
+                    </form>
+                </div>
+                <div class="col-md-6 contact-info">
+                    <div class="follow">
+                        <b>Address:</b> <i class="fas fa-map-marked-alt"></i> Pleška ul. 27/1, Velika Gorica, HR
+                    </div>
+                    <div class="follow">
+                        <b>Phone:</b> <i class="fas fa-phone-alt"></i> 01 6326 666
+                    </div>
+                    <div class="follow">
+                        <b>Email:</b> <i class="fas fa-at"></i> gablerica@gmail.com
+                    </div>
+                    <div class="follow">
+                        <label>
+                            <b>Get Social:</b>
+                        </label>
+                        <a href="https://www.facebook.com/gablerica/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/gablerica/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://g.page/Gablerica?share" target="_blank"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+    </section>
+
+
+    <!---- Footer ---->
+    <footer>
+        <p>Copyright &copy; 2020 Antonio Jozinović. <a href="https://github.com/toni963" target="_blank">  <i class="fab fa-github"></i>  <a href="https://www.facebook.com/Be.The.Change.In.This.World/"> | Facebook</a></a></p>
+    </footer>
+</body>
+</html>
